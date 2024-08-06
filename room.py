@@ -1,4 +1,4 @@
-import gate, item
+import item
 
 class Room:
     def __init__(self, name, description, items, units) -> None:

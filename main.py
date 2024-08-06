@@ -1,4 +1,4 @@
-import room, gate, starcraft
+import starcraft
 
 def main():
     game = starcraft.StarCraftRPG()

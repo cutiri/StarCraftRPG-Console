@@ -1,4 +1,4 @@
-import room, item
+import item
 
 class Gate:
     def __init__(self, direction, room, openRequirements, visibleRequirements) -> None:

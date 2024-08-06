@@ -1,36 +1,36 @@
-import item, room, gate, command, unit, textcolor as color
+import item, room, gate, unit, textcolor as color
 
 
 class GameInitializer:
     def __init__(self) -> None:
         khaydarin = item.Item("crystal", "A piece of Khaydarin Crystal, it's blue and shinny", ["You pick up the crystal, it is blue and shinny"])
-        keycard = item.Item("Key Card", "A bloody key card, a name is still visible, it belonged to Edmund Duke", 
+        keycard = item.Item("Key Card", "A bloody key card, a name is still visible, it belonged to Edmund Duke",
                             ["You pick up the card, it still has rests of blood on it and you can read a name Edmund Duke"])
-        rifle = item.Item("rifle", "A C-14 Impaler gauss rifle, is the standard marine rifle", 
+        rifle = item.Item("rifle", "A C-14 Impaler gauss rifle, is the standard marine rifle",
                           ["You pick up the C-14 Impaler Gauss rifle, the standard marine rifle in the Terran forces."])
-        stimpack = item.Item("stimpack", "A brand new stimpack never used", 
+        stimpack = item.Item("stimpack", "A brand new stimpack never used",
                              ["You pick up a Medic's stimpack, commonly used among Terran forces to revive injured soldiers."])
 
         
 
-        firebat = unit.Unit("Firebat", True, None, None, 
+        firebat = unit.Unit("Firebat", True, None, None,
                             ["You quickly use the stimpack on the firebat and this one inmediatly stands up fuelled by the drug and yells",
-                             color.Color.PURPLE + "Fueled up! Ready to roast!" + color.Color.RESET], 
+                             color.Color.PURPLE + "Fueled up! Ready to roast!" + color.Color.RESET],
                             ["You need something else"], [], [stimpack])
-        marine = unit.Unit("Marine", True, None, None, 
+        marine = unit.Unit("Marine", True, None, None,
                            ["You quickly use the stimpack on the marine and this one inmediatly stands up fuelled by the drug and yells"
                             , color.Color.RED + "Oh yeeaaahh... Go ahead commander." + color.Color.RESET],
-                            ["You need something else"], [], [stimpack])
-        zerglings = unit.Unit("Zerglings", False, firebat, None, 
+                           ["You need something else"], [], [stimpack])
+        zerglings = unit.Unit("Zerglings", False, firebat, None,
                               ["With a swift, precise sweep of his flamethrower",
                                "your fellow Firebat incinerates the charging Zerglings",
                                "turning them into ashes in the blink of an eye.",
-                               "Then you see a keycard one of them was chewing."], 
+                               "Then you see a keycard one of them was chewing."],
                               ["You start shooting at the Zerglings but they are too many and soon overwealm you",
                                "one of them is able to reach you and stab you in the chest",
                                "you fall to the ground and soon loose conciousness."],
                               [keycard], [])
-        hydralisk = unit.Unit("Hydralisk", False, None, rifle, 
+        hydralisk = unit.Unit("Hydralisk", False, None, rifle,
                               ["As you aim your C-14 Impaler at the Hydralisk and open fire, the hideous creature dodges your bullets and charges toward  you.",
                                "Then you hear the unmistakable sound of a C-20 Canister rifle.",
                                "A massive hole appears in the Hydralisk's chest, and it crumples to the ground, lifeless.",

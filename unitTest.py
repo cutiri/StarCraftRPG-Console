@@ -1,4 +1,4 @@
-import room, gate, command, unit, item
+import room, gate, unit, item
 
 def test(val1, val2):
     print("Pass" if val1 == val2 else "Fail")
@@ -12,10 +12,10 @@ firebat = unit.Unit("Firebat", True, None, None, "", "", [], [stimpack])
 marine = unit.Unit("Marine", True, None, None, "", "", [], [stimpack])
 zerglings = unit.Unit("Zerglings", False, firebat, None, "With a swift, precise sweep of his flamethrower, your fellow Firebat incinerates the charging Zerglings, turning them into ashes in the blink of an eye. Then you see a keycard one of them was chewing.", 
                         "You start shooting at the zerglings but they are too many and soon overwealm you, one of them is able to reach you and stab you in the chest, you fall to the ground and soon loose conciousness.",
-                        [keycard], [])
+                      [keycard], [])
 hydralisk = unit.Unit("Hydralisk", False, None, rifle, "As you aim your C-14 Impaler at the Hydralisk and open fire, the hideous creature deftly dodges your bullets and charges toward you. In the nick of time, you hear the unmistakable sound of a C-20 Canister rifle. A massive hole appears in the Hydralisk's chest, and it crumples to the ground, lifeless.",
                         "Driven by an inexplicable surge of determination, you charge the Hydralisk unarmed. It gazes at you with bewilderment before spitting a corrosive stream of acid into your face. Agonizing pain surges through you, and in your final moments, you hear Sarah's voice echoing, questioning your seemingly irrational decision.",
-                        [], []) 
+                      [], [])
 
 khaydarin = item.Item("Khaydarin", "A piece of Khaydarin Crystal, it's blue and shinny", "")
 keycard = item.Item("Key Card", "A bloody key card, a name is still visible, it belonged to Edmund Duke", "")
