@@ -60,7 +60,7 @@ A web-based version of StarCraftRPG is also available. You can explore it at [St
 
 ## License
 
-The StarCraftRPG project is licensed under the [MIT License](#). See the LICENSE file for more details.
+The StarCraftRPG project is licensed under the [MIT License](https://github.com/cutiri/StarCraftRPG-Console?tab=MIT-1-ov-file#). See the LICENSE file for more details.
 
 ## Contact
 
